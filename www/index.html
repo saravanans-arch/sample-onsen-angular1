@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+  <title>2Doist</title>
+
+  <script src="cordova.js"></script>
+  <script src="./lib/OnsenUI-dist-2.9.2/js/onsenui.js"></script>
+  <script src="./lib/angular.min.js"></script>
+  <script src="./lib/OnsenUI-dist-2.9.2/js/angular-onsenui.js"></script>
+
+
+  <link rel="stylesheet" href="./lib/OnsenUI-dist-2.9.2/css/onsenui.css">
+  <link rel="stylesheet" href="./lib/OnsenUI-dist-2.9.2/css/onsen-css-components.css">
+  <!--<link rel="stylesheet" href="./lib/OnsenUI-dist-2.9.2/css/old-onsen-css-components.css">-->
+
+  <link rel="stylesheet" href="./lib/OnsenUI-dist-2.9.2/css/font_awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./lib/OnsenUI-dist-2.9.2/css/material-design-iconic-font/css/material-design-iconic-font.css">
+  <link rel="stylesheet" href="./lib/OnsenUI-dist-2.9.2/css/ionicons/css/ionicons.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body ng-app="myApp" ng-controller="mainController">
+
+<ons-navigator var="layoutNavigator" id="layoutNavigator">
+  <ons-page  ng-init="initiator()">
+
+    <div style="text-align: center;margin-top: 40%;">
+      <div><i class="fa fa-spinner fa-pulse" style="font-size: 33px;color: #8a8a8a;"></i></div>
+      <div style="color: #666;margin-top: 20px;font-size: 14px;">Fetching Setups</div>
+    </div>
+
+  </ons-page>
+</ons-navigator>
+
+<script src="js/app.js"></script>
+</body>
+</html>
